@@ -4,7 +4,18 @@ const validator = {
     rules: [
       {
         test: /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i,
-        message: 'Please Enter Valid Email',
+        message: 'Informe um e-mail válido.',
+      },
+    ],
+    errors: [],
+    valid: false,
+    state: '',
+  },
+  cnpj: {
+    rules: [
+      {
+        test: /^([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})/i,
+        message: 'Informe um CNPJ válido.',
       },
     ],
     errors: [],
@@ -14,14 +25,12 @@ const validator = {
   password: {
     rules: [
       {
-        test: (value) => {
-          return value.length >= 6;
-        },
-        message: 'Password can not be < 6 characters',
+        test: /^(?=\w{5})(?=.*\d{2,})/i,
+        message: 'A senha precisa ser maior do que 6 caractéres.',
       },
       {
         test: /^[a-z0-9A-Z_]+$/,
-        message: 'Enter Valid Password',
+        message: 'Informe uma senha válida.',
       },
     ],
     errors: [],
@@ -32,7 +41,7 @@ const validator = {
     rules: [
       {
         test: /^[a-zA-Z_]+$/i,
-        message: 'number not allowed',
+        message: 'Números não são permitidos.',
       },
     ],
     errors: [],

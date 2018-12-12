@@ -1,0 +1,55 @@
+.page {
+  height: 100vh;
+  background: linear-gradient(
+    156.72070975921747deg,
+    rgba(10, 131, 254, 1) 0%,
+    rgba(0, 188, 255, 1) 100%
+  );
+
+  @include media-breakpoint-down(sm) {
+    font-size: 8px;
+  }
+
+  .wrapper {
+    max-width: 1120px;
+    background: #fff0;
+    padding:40px;
+    @include media-breakpoint-down(sm) {
+      padding: 10px;
+    }
+    .logo {
+      height: 130px;
+      @include media-breakpoint-down(sm) {
+        height: 80px;
+      }
+    }
+    .introduction {
+      font-family: "Karla";
+      line-height: 1.4em;
+      color: #fff;
+      font-size: 2.15em;
+    }
+
+    form {
+      .form-group {
+        margin-bottom: 44px;
+        @include media-breakpoint-down(xs) {
+          margin-bottom: 24px;
+        }
+
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+      .btn {
+        margin-top: 40px;
+        @include media-breakpoint-down(xs) {
+          margin-top: 24px !important;
+        }
+        border-radius: 115px;
+        font-family: "Karla";
+        font-size: 2.3em;
+        font-weight: bold;
+        background-color: #fff;
+      }
+    }
+  }
+}

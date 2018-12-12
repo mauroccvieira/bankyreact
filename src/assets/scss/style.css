@@ -11421,6 +11421,46 @@ button.rbc-input::-moz-focus-inner {
 .feeds .content .content-text {
   max-width: 170px; }
 
+.page {
+  height: 100vh;
+  background: linear-gradient(156.72071deg, #0a83fe 0%, #00bcff 100%); }
+  @media (max-width: 767.98px) {
+    .page {
+      font-size: 8px; } }
+  .page .wrapper {
+    max-width: 1120px;
+    background: #fff0;
+    padding: 40px; }
+    @media (max-width: 767.98px) {
+      .page .wrapper {
+        padding: 10px; } }
+    .page .wrapper .logo {
+      height: 130px; }
+      @media (max-width: 767.98px) {
+        .page .wrapper .logo {
+          height: 80px; } }
+    .page .wrapper .introduction {
+      font-family: "Karla";
+      line-height: 1.4em;
+      color: #fff;
+      font-size: 2.15em; }
+    .page .wrapper form .form-group {
+      margin-bottom: 44px;
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1); }
+      @media (max-width: 575.98px) {
+        .page .wrapper form .form-group {
+          margin-bottom: 24px; } }
+    .page .wrapper form .btn {
+      margin-top: 40px;
+      border-radius: 115px;
+      font-family: "Karla";
+      font-size: 2.3em;
+      font-weight: bold;
+      background-color: #fff; }
+      @media (max-width: 575.98px) {
+        .page .wrapper form .btn {
+          margin-top: 24px !important; } }
+
 [dir="rtl"] {
   text-align: right;
   direction: rtl;
